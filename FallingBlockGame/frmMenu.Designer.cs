@@ -40,9 +40,11 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FallingBlockGame.Properties.Resources.titleLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(60, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(90, 42);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(380, 190);
+            this.pictureBox1.Size = new System.Drawing.Size(570, 292);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 199;
             this.pictureBox1.TabStop = false;
             // 
@@ -54,10 +56,10 @@
             this.lblExit.ForeColor = System.Drawing.Color.White;
             this.lblExit.Image = global::FallingBlockGame.Properties.Resources.button;
             this.lblExit.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblExit.Location = new System.Drawing.Point(145, 402);
+            this.lblExit.Location = new System.Drawing.Point(218, 618);
             this.lblExit.Margin = new System.Windows.Forms.Padding(0);
             this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(210, 51);
+            this.lblExit.Size = new System.Drawing.Size(315, 78);
             this.lblExit.TabIndex = 198;
             this.lblExit.Text = "Exit";
             this.lblExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -71,10 +73,10 @@
             this.lblHowToPlay.ForeColor = System.Drawing.Color.White;
             this.lblHowToPlay.Image = global::FallingBlockGame.Properties.Resources.button;
             this.lblHowToPlay.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblHowToPlay.Location = new System.Drawing.Point(145, 351);
+            this.lblHowToPlay.Location = new System.Drawing.Point(218, 540);
             this.lblHowToPlay.Margin = new System.Windows.Forms.Padding(0);
             this.lblHowToPlay.Name = "lblHowToPlay";
-            this.lblHowToPlay.Size = new System.Drawing.Size(210, 51);
+            this.lblHowToPlay.Size = new System.Drawing.Size(315, 78);
             this.lblHowToPlay.TabIndex = 197;
             this.lblHowToPlay.Text = "How to Play";
             this.lblHowToPlay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,10 +90,10 @@
             this.lblAboutGame.ForeColor = System.Drawing.Color.White;
             this.lblAboutGame.Image = global::FallingBlockGame.Properties.Resources.button;
             this.lblAboutGame.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblAboutGame.Location = new System.Drawing.Point(145, 300);
+            this.lblAboutGame.Location = new System.Drawing.Point(218, 462);
             this.lblAboutGame.Margin = new System.Windows.Forms.Padding(0);
             this.lblAboutGame.Name = "lblAboutGame";
-            this.lblAboutGame.Size = new System.Drawing.Size(210, 51);
+            this.lblAboutGame.Size = new System.Drawing.Size(315, 78);
             this.lblAboutGame.TabIndex = 196;
             this.lblAboutGame.Text = "About Game";
             this.lblAboutGame.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -101,14 +103,15 @@
             // 
             this.lblPlay.BackColor = System.Drawing.Color.Transparent;
             this.lblPlay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlay.ForeColor = System.Drawing.Color.White;
             this.lblPlay.Image = global::FallingBlockGame.Properties.Resources.button;
             this.lblPlay.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblPlay.Location = new System.Drawing.Point(145, 249);
+            this.lblPlay.Location = new System.Drawing.Point(218, 383);
             this.lblPlay.Margin = new System.Windows.Forms.Padding(0);
             this.lblPlay.Name = "lblPlay";
-            this.lblPlay.Size = new System.Drawing.Size(210, 51);
+            this.lblPlay.Size = new System.Drawing.Size(315, 78);
             this.lblPlay.TabIndex = 189;
             this.lblPlay.Text = "Start Game";
             this.lblPlay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -117,10 +120,10 @@
             // 
             // frmMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(500, 590);
+            this.ClientSize = new System.Drawing.Size(750, 908);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblExit);
             this.Controls.Add(this.lblHowToPlay);
@@ -128,6 +131,7 @@
             this.Controls.Add(this.lblPlay);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "frmMenu";
             this.Text = "frmMenu";

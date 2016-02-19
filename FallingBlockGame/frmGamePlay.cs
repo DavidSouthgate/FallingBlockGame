@@ -1075,5 +1075,10 @@ namespace FallingBlockGame
             //Show the newly created form
             frmHowToPlay.ShowDialog();
         }
+
+        private void tESTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            menu.Height = 15;
+        }
     }
 }
