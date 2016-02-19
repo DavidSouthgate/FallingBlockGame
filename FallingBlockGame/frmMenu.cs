@@ -36,7 +36,7 @@ namespace FallingBlockGame
         }
 
         //Runs when the play button is clicked
-        private void lblPlay_Click(object sender, EventArgs e)
+        private void cmdPlay_Click(object sender, EventArgs e)
         {
 
             //Create a new instance of the form 'frmGamePlay'
@@ -52,16 +52,8 @@ namespace FallingBlockGame
             this.Close();
         }
 
-        //Runs when the exit button is clicked
-        private void lblExit_Click(object sender, EventArgs e)
-        {
-
-            //Close the current form
-            this.Close();
-        }
-
         //Runs when the about button is clicked
-        private void lblAboutGame_Click(object sender, EventArgs e)
+        private void cmdAboutGame_Click(object sender, EventArgs e)
         {
 
             //Create a new instance of the form 'frmAbout'
@@ -72,7 +64,7 @@ namespace FallingBlockGame
         }
 
         //Runs when the how to play button is clicked
-        private void lblHowToPlay_Click(object sender, EventArgs e)
+        private void cmdHowToPlay_Click(object sender, EventArgs e)
         {
 
             //Create a new instance of the form 'frmHowToPlay'
@@ -80,6 +72,14 @@ namespace FallingBlockGame
 
             //Show the newly created form
             frmHowToPlay.ShowDialog();
+        }
+
+        //Runs when the exit button is clicked
+        private void cmdExit_Click(object sender, EventArgs e)
+        {
+
+            //Close the current form
+            this.Close();
         }
     }
 }

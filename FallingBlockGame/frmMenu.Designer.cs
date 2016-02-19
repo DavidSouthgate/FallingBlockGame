@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblExit = new System.Windows.Forms.Label();
-            this.lblHowToPlay = new System.Windows.Forms.Label();
-            this.lblAboutGame = new System.Windows.Forms.Label();
-            this.lblPlay = new System.Windows.Forms.Label();
+            this.cmdPlay = new System.Windows.Forms.Button();
+            this.cmdExit = new System.Windows.Forms.Button();
+            this.cmdHowToPlay = new System.Windows.Forms.Button();
+            this.cmdAboutGame = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,75 +48,81 @@
             this.pictureBox1.TabIndex = 199;
             this.pictureBox1.TabStop = false;
             // 
-            // lblExit
+            // cmdPlay
             // 
-            this.lblExit.BackColor = System.Drawing.Color.Transparent;
-            this.lblExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExit.ForeColor = System.Drawing.Color.White;
-            this.lblExit.Image = global::FallingBlockGame.Properties.Resources.button;
-            this.lblExit.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblExit.Location = new System.Drawing.Point(218, 618);
-            this.lblExit.Margin = new System.Windows.Forms.Padding(0);
-            this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(315, 78);
-            this.lblExit.TabIndex = 198;
-            this.lblExit.Text = "Exit";
-            this.lblExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
+            this.cmdPlay.BackgroundImage = global::FallingBlockGame.Properties.Resources.button;
+            this.cmdPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdPlay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdPlay.FlatAppearance.BorderSize = 0;
+            this.cmdPlay.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.cmdPlay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.cmdPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdPlay.ForeColor = System.Drawing.Color.White;
+            this.cmdPlay.Location = new System.Drawing.Point(217, 438);
+            this.cmdPlay.Name = "cmdPlay";
+            this.cmdPlay.Size = new System.Drawing.Size(317, 63);
+            this.cmdPlay.TabIndex = 200;
+            this.cmdPlay.Text = "Start Game";
+            this.cmdPlay.UseVisualStyleBackColor = true;
+            this.cmdPlay.Click += new System.EventHandler(this.cmdPlay_Click);
             // 
-            // lblHowToPlay
+            // cmdExit
             // 
-            this.lblHowToPlay.BackColor = System.Drawing.Color.Transparent;
-            this.lblHowToPlay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblHowToPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHowToPlay.ForeColor = System.Drawing.Color.White;
-            this.lblHowToPlay.Image = global::FallingBlockGame.Properties.Resources.button;
-            this.lblHowToPlay.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblHowToPlay.Location = new System.Drawing.Point(218, 540);
-            this.lblHowToPlay.Margin = new System.Windows.Forms.Padding(0);
-            this.lblHowToPlay.Name = "lblHowToPlay";
-            this.lblHowToPlay.Size = new System.Drawing.Size(315, 78);
-            this.lblHowToPlay.TabIndex = 197;
-            this.lblHowToPlay.Text = "How to Play";
-            this.lblHowToPlay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblHowToPlay.Click += new System.EventHandler(this.lblHowToPlay_Click);
+            this.cmdExit.BackgroundImage = global::FallingBlockGame.Properties.Resources.button;
+            this.cmdExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdExit.FlatAppearance.BorderSize = 0;
+            this.cmdExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.cmdExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.cmdExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdExit.ForeColor = System.Drawing.Color.White;
+            this.cmdExit.Location = new System.Drawing.Point(217, 696);
+            this.cmdExit.Name = "cmdExit";
+            this.cmdExit.Size = new System.Drawing.Size(317, 63);
+            this.cmdExit.TabIndex = 203;
+            this.cmdExit.Text = "Exit";
+            this.cmdExit.UseVisualStyleBackColor = true;
+            this.cmdExit.Click += new System.EventHandler(this.cmdExit_Click);
             // 
-            // lblAboutGame
+            // cmdHowToPlay
             // 
-            this.lblAboutGame.BackColor = System.Drawing.Color.Transparent;
-            this.lblAboutGame.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblAboutGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAboutGame.ForeColor = System.Drawing.Color.White;
-            this.lblAboutGame.Image = global::FallingBlockGame.Properties.Resources.button;
-            this.lblAboutGame.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblAboutGame.Location = new System.Drawing.Point(218, 462);
-            this.lblAboutGame.Margin = new System.Windows.Forms.Padding(0);
-            this.lblAboutGame.Name = "lblAboutGame";
-            this.lblAboutGame.Size = new System.Drawing.Size(315, 78);
-            this.lblAboutGame.TabIndex = 196;
-            this.lblAboutGame.Text = "About Game";
-            this.lblAboutGame.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblAboutGame.Click += new System.EventHandler(this.lblAboutGame_Click);
+            this.cmdHowToPlay.BackgroundImage = global::FallingBlockGame.Properties.Resources.button;
+            this.cmdHowToPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdHowToPlay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdHowToPlay.FlatAppearance.BorderSize = 0;
+            this.cmdHowToPlay.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.cmdHowToPlay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.cmdHowToPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdHowToPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdHowToPlay.ForeColor = System.Drawing.Color.White;
+            this.cmdHowToPlay.Location = new System.Drawing.Point(217, 610);
+            this.cmdHowToPlay.Name = "cmdHowToPlay";
+            this.cmdHowToPlay.Size = new System.Drawing.Size(317, 63);
+            this.cmdHowToPlay.TabIndex = 202;
+            this.cmdHowToPlay.Text = "How to Play";
+            this.cmdHowToPlay.UseVisualStyleBackColor = true;
+            this.cmdHowToPlay.Click += new System.EventHandler(this.cmdHowToPlay_Click);
             // 
-            // lblPlay
+            // cmdAboutGame
             // 
-            this.lblPlay.BackColor = System.Drawing.Color.Transparent;
-            this.lblPlay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlay.ForeColor = System.Drawing.Color.White;
-            this.lblPlay.Image = global::FallingBlockGame.Properties.Resources.button;
-            this.lblPlay.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblPlay.Location = new System.Drawing.Point(218, 383);
-            this.lblPlay.Margin = new System.Windows.Forms.Padding(0);
-            this.lblPlay.Name = "lblPlay";
-            this.lblPlay.Size = new System.Drawing.Size(315, 78);
-            this.lblPlay.TabIndex = 189;
-            this.lblPlay.Text = "Start Game";
-            this.lblPlay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblPlay.UseMnemonic = false;
-            this.lblPlay.Click += new System.EventHandler(this.lblPlay_Click);
+            this.cmdAboutGame.BackgroundImage = global::FallingBlockGame.Properties.Resources.button;
+            this.cmdAboutGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmdAboutGame.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdAboutGame.FlatAppearance.BorderSize = 0;
+            this.cmdAboutGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.cmdAboutGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.cmdAboutGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdAboutGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAboutGame.ForeColor = System.Drawing.Color.White;
+            this.cmdAboutGame.Location = new System.Drawing.Point(217, 524);
+            this.cmdAboutGame.Name = "cmdAboutGame";
+            this.cmdAboutGame.Size = new System.Drawing.Size(317, 63);
+            this.cmdAboutGame.TabIndex = 201;
+            this.cmdAboutGame.Text = "About Game";
+            this.cmdAboutGame.UseVisualStyleBackColor = true;
+            this.cmdAboutGame.Click += new System.EventHandler(this.cmdAboutGame_Click);
             // 
             // frmMenu
             // 
@@ -124,11 +130,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(750, 908);
+            this.Controls.Add(this.cmdExit);
+            this.Controls.Add(this.cmdHowToPlay);
+            this.Controls.Add(this.cmdAboutGame);
+            this.Controls.Add(this.cmdPlay);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lblExit);
-            this.Controls.Add(this.lblHowToPlay);
-            this.Controls.Add(this.lblAboutGame);
-            this.Controls.Add(this.lblPlay);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -142,12 +148,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblPlay;
-        private System.Windows.Forms.Label lblAboutGame;
-        private System.Windows.Forms.Label lblHowToPlay;
-        private System.Windows.Forms.Label lblExit;
         private System.Windows.Forms.PictureBox pictureBox1;
-
+        private System.Windows.Forms.Button cmdPlay;
+        private System.Windows.Forms.Button cmdExit;
+        private System.Windows.Forms.Button cmdHowToPlay;
+        private System.Windows.Forms.Button cmdAboutGame;
     }
 }
