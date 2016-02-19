@@ -36,6 +36,11 @@ namespace FallingBlockGame
             
             //Set application version
             lblApplicationVersion.Text = Application.ProductVersion;
+
+            //Set location in relation to owner form
+            int padding = (this.Owner.Width - this.Width) / 2;
+            this.Left = this.Owner.Left + padding;
+            this.Top = this.Owner.Top + padding;
         }
 
         //Runs when the font copyright notice is clicked

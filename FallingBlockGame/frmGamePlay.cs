@@ -65,7 +65,7 @@ namespace FallingBlockGame
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            //Put all of the picture boxes used to display the game into a control array
+            //Put all of the picture boxes used to display the game into a conftrol array
             picBlockGrid = new PictureBox[] { picBlockGrid1, picBlockGrid2, picBlockGrid3, picBlockGrid4, picBlockGrid5,
                                                 picBlockGrid6, picBlockGrid7, picBlockGrid8, picBlockGrid9, picBlockGrid10,
                                                 picBlockGrid11, picBlockGrid12, picBlockGrid13, picBlockGrid14, picBlockGrid15,
@@ -286,6 +286,9 @@ namespace FallingBlockGame
             blockShapeArray[6, 3, 1, 1] = true; //Z Block - Rotation 4
             blockShapeArray[6, 3, 1, 2] = true; //Z Block - Rotation 4
             blockShapeArray[6, 3, 2, 1] = true; //Z Block - Rotation 4
+
+            //Set location in relation to owner form
+            this.Location = this.Owner.Location;
 
             //Start the game
             startGame();
@@ -534,7 +537,7 @@ namespace FallingBlockGame
             frmHighScore.iScore = iScore;
 
             //Show the newly created form
-            frmHighScore.ShowDialog();
+            frmHighScore.ShowDialog(this);
 
             //Close the current form
             this.Close();
@@ -1044,10 +1047,10 @@ namespace FallingBlockGame
             frmMenu frmMenu = new frmMenu();
 
             //Show the newly created form
-            frmMenu.ShowDialog();
+            frmMenu.Show(this);
 
             //Close the current form
-            this.Close();
+            //this.Close();
         }
 
         //Runs when menu strip about button is pressed
@@ -1060,7 +1063,7 @@ namespace FallingBlockGame
             frmAbout frmAbout = new frmAbout();
 
             //Show the newly created form
-            frmAbout.ShowDialog();
+            frmAbout.ShowDialog(this);
         }
 
         //Runs when menu strip about button is pressed
@@ -1073,12 +1076,7 @@ namespace FallingBlockGame
             frmHowToPlay frmHowToPlay = new frmHowToPlay();
 
             //Show the newly created form
-            frmHowToPlay.ShowDialog();
-        }
-
-        private void tESTToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            menu.Height = 15;
+            frmHowToPlay.ShowDialog(this);
         }
     }
 }

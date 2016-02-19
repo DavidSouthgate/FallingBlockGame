@@ -37,6 +37,10 @@ namespace FallingBlockGame
 
             //Set objectives help screen panel to be displayed
             viewHelp(panelObjective);
+
+            //Set location in relation to owner form
+            this.Left = this.Owner.Left - ((this.Width - this.Owner.Width) / 2);
+            this.Top = this.Owner.Top - ((this.Height - this.Owner.Height) / 2);
         }
 
         //Used to view a specific help panel

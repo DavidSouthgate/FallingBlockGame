@@ -33,6 +33,20 @@ namespace FallingBlockGame
 
             //Set Window Title
             this.Text = sWindowTitle;
+
+            //Try to set the location of the form to the owner form location
+            try
+            {
+
+                //Set location in relation to owner form
+                this.Location = this.Owner.Location;
+            }
+
+            //Otherwise, center the form
+            catch
+            {
+                this.CenterToScreen();
+            }
         }
 
         //Runs when the play button is clicked
@@ -46,7 +60,7 @@ namespace FallingBlockGame
             this.Hide();
 
             //Show the newly created form
-            frmGamePlay.ShowDialog();
+            frmGamePlay.ShowDialog(this);
 
             //Close the current form
             this.Close();
@@ -60,7 +74,7 @@ namespace FallingBlockGame
             frmAbout frmAbout = new frmAbout();
 
             //Show the newly created form
-            frmAbout.ShowDialog();
+            frmAbout.ShowDialog(this);
         }
 
         //Runs when the how to play button is clicked
@@ -71,7 +85,7 @@ namespace FallingBlockGame
             frmHowToPlay frmHowToPlay = new frmHowToPlay();
 
             //Show the newly created form
-            frmHowToPlay.ShowDialog();
+            frmHowToPlay.ShowDialog(this);
         }
 
         //Runs when the exit button is clicked
