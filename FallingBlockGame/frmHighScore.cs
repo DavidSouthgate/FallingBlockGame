@@ -336,7 +336,7 @@ namespace FallingBlockGame
         }
 
         //Runs when the play again button is clicked
-        private void lblPlayAgain_Click(object sender, EventArgs e)
+        private void cmdPlayAgain_Click(object sender, EventArgs e)
         {
 
             //Start a new game
@@ -344,9 +344,9 @@ namespace FallingBlockGame
         }
 
         //Runs when the main menu button is clicked
-        private void lmlMainMenu_Click(object sender, EventArgs e)
+        private void cmdMainMenu_Click(object sender, EventArgs e)
         {
-			
+
             //If no score has been added to the highscore board
             if (!scoreAdded)
             {
