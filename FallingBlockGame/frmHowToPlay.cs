@@ -54,15 +54,15 @@ namespace FallingBlockGame
             panelCurrent = panelHelp;
 
             //Move new help panel to correct position
-            panelCurrent.Left = 222;
-            panelCurrent.Top = 12;
+            panelCurrent.Left = 356;
+            panelCurrent.Top = 23;
 
             //Display new help panel
             panelCurrent.Visible = true;
         }
 
         //Runs when the objectives button is clicked
-        private void lblObjective_Click(object sender, EventArgs e)
+        private void cmdObjective_Click(object sender, EventArgs e)
         {
 
             //Display objectives help section
@@ -70,7 +70,7 @@ namespace FallingBlockGame
         }
 
         //Runs when the controls button is clicked
-        private void lblControls_Click(object sender, EventArgs e)
+        private void cmdControls_Click(object sender, EventArgs e)
         {
 
             //Display objectives help section
@@ -78,7 +78,7 @@ namespace FallingBlockGame
         }
 
         //Runs when the blocks button is clicked
-        private void lblBlocks_Click(object sender, EventArgs e)
+        private void cmdBlocks_Click(object sender, EventArgs e)
         {
 
             //Display blocks help section
@@ -86,7 +86,7 @@ namespace FallingBlockGame
         }
 
         //Runs when the high scores button is clicked
-        private void lblHighScores_Click(object sender, EventArgs e)
+        private void cmdHighScores_Click(object sender, EventArgs e)
         {
 
             //Display blocks help section
@@ -94,7 +94,7 @@ namespace FallingBlockGame
         }
 
         //Runs when the FAQ button is clicked
-        private void lblFAQ_Click(object sender, EventArgs e)
+        private void cmdFaq_Click(object sender, EventArgs e)
         {
 
             //Display FAQ help section
@@ -102,7 +102,7 @@ namespace FallingBlockGame
         }
 
         //Runs when the how to play button is clicked
-        private void lblExit_Click(object sender, EventArgs e)
+        private void cmdExit_Click(object sender, EventArgs e)
         {
 
             //Close the how to play form
