@@ -33,10 +33,24 @@ namespace FallingBlockGame
 
             //Set Window Title
             this.Text = sWindowTitle;
+
+            //Try to set the location of the form to the owner form location
+            try
+            {
+
+                //Set location in relation to owner form
+                this.Location = this.Owner.Location;
+            }
+
+            //Otherwise, center the form
+            catch
+            {
+                this.CenterToScreen();
+            }
         }
 
         //Runs when the play button is clicked
-        private void lblPlay_Click(object sender, EventArgs e)
+        private void cmdPlay_Click(object sender, EventArgs e)
         {
 
             //Create a new instance of the form 'frmGamePlay'
@@ -46,40 +60,40 @@ namespace FallingBlockGame
             this.Hide();
 
             //Show the newly created form
-            frmGamePlay.ShowDialog();
+            frmGamePlay.ShowDialog(this);
 
             //Close the current form
-            this.Close();
-        }
-
-        //Runs when the exit button is clicked
-        private void lblExit_Click(object sender, EventArgs e)
-        {
-
-            //Close the current form
-            this.Close();
+            //this.Close();
         }
 
         //Runs when the about button is clicked
-        private void lblAboutGame_Click(object sender, EventArgs e)
+        private void cmdAboutGame_Click(object sender, EventArgs e)
         {
 
             //Create a new instance of the form 'frmAbout'
             frmAbout frmAbout = new frmAbout();
 
             //Show the newly created form
-            frmAbout.ShowDialog();
+            frmAbout.ShowDialog(this);
         }
 
         //Runs when the how to play button is clicked
-        private void lblHowToPlay_Click(object sender, EventArgs e)
+        private void cmdHowToPlay_Click(object sender, EventArgs e)
         {
 
             //Create a new instance of the form 'frmHowToPlay'
             frmHowToPlay frmHowToPlay = new frmHowToPlay();
 
             //Show the newly created form
-            frmHowToPlay.ShowDialog();
+            frmHowToPlay.ShowDialog(this);
+        }
+
+        //Runs when the exit button is clicked
+        private void cmdExit_Click(object sender, EventArgs e)
+        {
+
+            //Close the current form
+            this.Close();
         }
     }
 }

@@ -96,6 +96,9 @@ namespace FallingBlockGame
                 //Deserialize blank json data
                 highScores = JsonConvert.DeserializeObject<List<HighScoreItem>>("[]");
             }
+
+            //Set location in relation to owner form
+            this.Location = this.Owner.Location;
         }
 
         //Runs when the form is closing
@@ -248,7 +251,7 @@ namespace FallingBlockGame
             this.Hide();
 
             //Show the newly created form
-            frmGamePlay.ShowDialog();
+            frmGamePlay.ShowDialog(this);
 
             //Close the current form
             this.Close();
@@ -336,7 +339,7 @@ namespace FallingBlockGame
         }
 
         //Runs when the play again button is clicked
-        private void lblPlayAgain_Click(object sender, EventArgs e)
+        private void cmdPlayAgain_Click(object sender, EventArgs e)
         {
 
             //Start a new game
@@ -344,9 +347,9 @@ namespace FallingBlockGame
         }
 
         //Runs when the main menu button is clicked
-        private void lmlMainMenu_Click(object sender, EventArgs e)
+        private void cmdMainMenu_Click(object sender, EventArgs e)
         {
-			
+
             //If no score has been added to the highscore board
             if (!scoreAdded)
             {
@@ -363,7 +366,7 @@ namespace FallingBlockGame
             this.Hide();
 
             //Show the newly created form
-            frmMenu.ShowDialog();
+            frmMenu.ShowDialog(this);
 
             //Close the current form
             this.Close();
@@ -388,7 +391,7 @@ namespace FallingBlockGame
             frmAbout frmAbout = new frmAbout();
 
             //Show the newly created form
-            frmAbout.ShowDialog();
+            frmAbout.ShowDialog(this);
         }
 
         //Runs when menu strip how to play button is pressed
@@ -399,7 +402,7 @@ namespace FallingBlockGame
             frmHowToPlay frmHowToPlay = new frmHowToPlay();
 
             //Show the newly created form
-            frmHowToPlay.ShowDialog();
+            frmHowToPlay.ShowDialog(this);
         }
 
         //Runs when menu strip clear highscores menu strip item is clicked
