@@ -1042,15 +1042,15 @@ namespace FallingBlockGame
         //Runs when menu strip quit button is pressed
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-            //Create a new instance of the form 'frmMenu'
-            frmMenu frmMenu = new frmMenu();
 
-            //Show the newly created form
-            frmMenu.Show(this);
+            //Show main menu
+            this.Owner.Show();
 
-            //Close the current form
-            //this.Close();
+            //Position main menu
+            this.Owner.Location = this.Location;
+
+            //CLose this game form
+            this.Close();
         }
 
         //Runs when menu strip about button is pressed

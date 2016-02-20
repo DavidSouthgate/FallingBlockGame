@@ -63,7 +63,7 @@ namespace FallingBlockGame
             frmGamePlay.ShowDialog(this);
 
             //Close the current form
-            this.Close();
+            //this.Close();
         }
 
         //Runs when the about button is clicked
