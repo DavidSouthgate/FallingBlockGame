@@ -58,8 +58,8 @@ namespace FallingBlockGame
             panelCurrent = panelHelp;
 
             //Move new help panel to correct position
-            panelCurrent.Left = 356;
-            panelCurrent.Top = 23;
+            panelCurrent.Left = 234;
+            panelCurrent.Top = 14;
 
             //Display new help panel
             panelCurrent.Visible = true;
