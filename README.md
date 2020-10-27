@@ -5,9 +5,9 @@ Tetris clone. I have made some updates since the version I submitted. These have
 As part of the assessment I also needed to create a user guide for the program. This describes how to use the fesatures of the program
 and how to play the game in general. To read this, click [here](Documentation/User Guide.pdf).
 
-##Requirements
+## Requirements
 * .NET Framework 4.5.2
 * [JSON.net](https://json.codeplex.com/)
  
-##Licence
+## Licence
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
